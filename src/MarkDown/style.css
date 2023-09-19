@@ -1,0 +1,58 @@
+body{
+    min-height : 90vh;
+    display:grid;
+    place-items:center;
+    background-color: rgb(245, 245, 245);
+}
+
+.center-div{
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3 , 2fr);
+}
+
+.left-side,
+.right-side,
+.second-right{
+    height: 80vh;
+    border: 1px solid black;
+    font-size: 25px;
+    padding: 10px 20px;
+    overflow: auto;
+}
+.table{
+    font-size: 15px;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cheatsheet-heading{
+    text-align: center;
+}
+.left-side{
+    background-color:rgb(131, 125, 119);
+    color: rgb(0, 0, 0);
+}
+.left-side::placeholder{
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .center-div{
+        width: 80vw;
+        margin: 100px auto;
+        display: block;
+    }
+    .left-side,
+    .right-side{
+        width: 100%;
+    }
+}
